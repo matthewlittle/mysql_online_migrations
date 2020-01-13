@@ -10,6 +10,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency "activerecord", ">= 3.2.15"
   s.add_runtime_dependency "activesupport", ">= 3.2.15"
   s.add_runtime_dependency "mysql2"
+  s.add_runtime_dependency "makara", '>= 0.4.1'
   s.add_development_dependency "logger"
   s.add_development_dependency "rspec"
   s.add_development_dependency "pry"
