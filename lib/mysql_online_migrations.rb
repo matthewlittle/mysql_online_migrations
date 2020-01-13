@@ -1,6 +1,6 @@
 require 'active_record'
 require "active_record/migration"
-require "active_record/connection_adapters/mysql2_adapter"
+require "active_record/connection_adapters/makara_mysql2_adapter"
 
 %w(*.rb).each do |path|
   Dir["#{File.dirname(__FILE__)}/mysql_online_migrations/#{path}"].each { |f| require(f) }
