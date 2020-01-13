@@ -1,6 +1,6 @@
 module ActiveRecord
   module ConnectionAdapters
-    class Mysql2AdapterWithoutLock < Mysql2Adapter
+    class Mysql2AdapterWithoutLock < MakaraMysql2Adapter
 
       OPTIMIZABLE_DDL_REGEX = /^(alter|create (unique )? ?index|drop index) /i
       DDL_WITH_COMMA_REGEX = /^alter /i
