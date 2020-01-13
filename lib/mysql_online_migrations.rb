@@ -17,7 +17,7 @@ module MysqlOnlineMigrations
 
   def connection
     original_connection = super
-    adapter_mode = original_connection.class.name == "ActiveRecord::ConnectionAdapters::Mysql2Adapter"
+    adapter_mode = original_connection.class.name == "ActiveRecord::ConnectionAdapters::MakaraMysql2Adapter"
 
     @original_adapter ||= if adapter_mode
       original_connection
